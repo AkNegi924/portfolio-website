@@ -2,6 +2,8 @@
 
 A modern, responsive portfolio website built with vanilla JavaScript and CSS, featuring smooth animations, interactive components, and optimized performance.
 
+You can access my website at https://aknegi924.github.io/portfolio-website/.
+
 ## Project Structure
 
 ```
