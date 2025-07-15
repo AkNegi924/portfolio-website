@@ -28,9 +28,8 @@ export const AnimationController = {
       });
     }, options);
 
-    // Observe elements that should fade in
     const fadeElements = document.querySelectorAll(
-      ".fade-in, .timeline-item, .project-card, .stat-item"
+      ".fade-in, .timeline-item, .project-card, .cp-link"
     );
     fadeElements.forEach((el) => {
       el.classList.add("fade-in");
@@ -39,71 +38,11 @@ export const AnimationController = {
   },
 
   animateElements() {
-    // Animate stats numbers
-    this.animateStats();
-
     // Animate skill tags
     this.animateSkillTags();
 
     // Add hover effects to project cards
     this.setupProjectCardAnimations();
-  },
-
-  animateStats() {
-    const statNumbers = document.querySelectorAll(".stat-number");
-
-    statNumbers.forEach((stat) => {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            this.countUpAnimation(entry.target);
-            observer.unobserve(entry.target);
-          }
-        });
-      });
-
-      observer.observe(stat);
-    });
-  },
-
-  countUpAnimation(element) {
-    const text = element.textContent;
-    const hasPercent = text.includes("%");
-    const hasDecimal = text.includes(".");
-    const numericValue = parseFloat(text.replace(/[^\d.]/g, ""));
-
-    if (isNaN(numericValue)) return;
-
-    const duration = 2000;
-    const steps = 60;
-    const stepValue = numericValue / steps;
-    const stepDuration = duration / steps;
-
-    let currentValue = 0;
-    let currentStep = 0;
-
-    const timer = setInterval(() => {
-      currentStep++;
-      currentValue += stepValue;
-
-      if (currentStep >= steps) {
-        currentValue = numericValue;
-        clearInterval(timer);
-      }
-
-      let displayValue = hasDecimal
-        ? currentValue.toFixed(2)
-        : Math.floor(currentValue);
-
-      // Handle special cases
-      if (text.includes("Top")) {
-        element.textContent = `Top ${displayValue}%`;
-      } else if (hasPercent) {
-        element.textContent = `${displayValue}%`;
-      } else {
-        element.textContent = displayValue;
-      }
-    }, stepDuration);
   },
 
   animateSkillTags() {
