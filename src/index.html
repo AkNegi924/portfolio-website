@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhilesh Negi - AI & ML Developer</title>
+
+    <!-- External Dependencies -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Modular CSS Files -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/components/components.css">
+    <link rel="stylesheet" href="css/components/navigation.css">
+    <link rel="stylesheet" href="css/components/hero.css">
+    <link rel="stylesheet" href="css/sections/about.css">
+    <link rel="stylesheet" href="css/sections/experience.css">
+    <link rel="stylesheet" href="css/sections/projects.css">
+    <link rel="stylesheet" href="css/sections/contact.css">
+    <link rel="stylesheet" href="css/sections/footer.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">AK</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Akhilesh Negi</span>
+                    </h1>
+                    <h2 class="hero-subtitle">AI & Machine Learning Developer</h2>
+                    <p class="hero-description">
+                        Passionate about creating intelligent solutions through cutting-edge AI/ML technologies.
+                        Currently pursuing B.Tech in Artificial Intelligence at NITK Surathkal.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-elements">
+                        <div class="floating-element" style="--delay: 0s;">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="floating-element" style="--delay: 1s;">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="floating-element" style="--delay: 2s;">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="floating-element" style="--delay: 3s;">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm a dedicated AI & ML enthusiast currently pursuing my Bachelor's in Artificial Intelligence
+                        at the prestigious National Institute of Technology Karnataka, Surathkal.
+                        I am also highly interested in Data Structures and Algorithms. I have solved 500+ problems
+                        across Leetcode, Codeforces and Codechef.
+                        With a strong foundation in machine learning, deep learning, and data science, I love solving
+                        complex problems through innovative technological solutions.
+                    </p>
+
+                    <!-- CP Profiles -->
+                    <div class="cp-profiles">
+                        <a href="https://leetcode.com/u/user_name_ak/" class="cp-link leetcode" data-tooltip="LeetCode"
+                            target="_blank" rel="noopener noreferrer">
+                            <img src="assets/leetcode.svg" alt="LeetCode" class="cp-icon-svg">
+                        </a>
+                        <a href="https://www.codechef.com/users/user_name_ak" class="cp-link codechef"
+                            data-tooltip="CodeChef" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/codechef.svg" alt="CodeChef" class="cp-icon-svg">
+                        </a>
+                        <a href="https://codeforces.com/profile/user_name_ak" class="cp-link codeforces"
+                            data-tooltip="Codeforces" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/codeforces.svg" alt="Codeforces" class="cp-icon-svg">
+                        </a>
+                        <a href="https://www.kaggle.com/akhileshnegi" class="cp-link kaggle" data-tooltip="Kaggle"
+                            target="_blank" rel="noopener noreferrer">
+                            <img src="assets/kaggle.svg" alt="Kaggle" class="cp-icon-svg">
+                        </a>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="skills-section">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Languages</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">C++</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">SQL</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>ML/AI Frameworks</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">TensorFlow</span>
+                                <span class="skill-tag">PyTorch</span>
+                                <span class="skill-tag">OpenCV</span>
+                                <span class="skill-tag">Scikit-learn</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Tools & Technologies</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Flask</span>
+                                <span class="skill-tag">Gradio</span>
+                                <span class="skill-tag">PostgreSQL</span>
+                                <span class="skill-tag">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+
+                <!-- Existing Fractal Analytics item -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Project Intern</h3>
+                            <span class="timeline-date">May 2025 – July 2025</span>
+                        </div>
+                        <h4>Fractal Analytics</h4>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Developed a full-stack <strong>RAG-based chatbot</strong> with Flask backend,
+                                    designed to assist project managers</li>
+                                <li>Indexed over <strong>500 documents</strong> (PDFs, Word, Excel, and PPTs) using
+                                    LlamaIndex for fast, semantic retrieval</li>
+                                <li>Used <strong>Azure Response API</strong> to integrate GPT-4o with DALL·E for
+                                    on‑demand image generation</li>
+                            </ul>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">LlamaIndex</span>
+                            <span class="tech-tag">GPT-4o</span>
+                            <span class="tech-tag">Azure API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New HALE Lab item -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Research Intern</h3>
+                            <span class="timeline-date">April 2024 – July 2024</span>
+                        </div>
+                        <h4>HALE Lab, NITK</h4>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Worked under the guidance of Dr. Sowmya Kamath on <strong>Automatic Cephalometric
+                                        Landmark Detection</strong></li>
+                                <li>Used <strong>VGG19</strong> for <strong>transfer learning</strong> to generate
+                                    <strong>heatmaps</strong> and <strong>offset maps</strong> from the cephalograms
+                                </li>
+                                <li>Passed these feature maps through a <strong>Regression Voting</strong> mechanism to
+                                    obtain the final landmark predictions</li>
+                                <li>Performed an <strong>ablation study</strong> by replacing VGG19 with
+                                    <strong>ResNet</strong> and <strong>DenseNet</strong>
+                                </li>
+                                <li>Achieved highest accuracy (63%) using a regularized version of
+                                    <strong>DenseNet</strong>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">VGG19</span>
+                            <span class="tech-tag">Transfer Learning</span>
+                            <span class="tech-tag">Regression Voting</span>
+                            <span class="tech-tag">Ablation Study</span>
+                            <span class="tech-tag">DenseNet</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="projects-container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-wrapper">
+                <button class="nav-arrow prev" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="projects-slider" id="projectsSlider">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Bankruptcy Prediction</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/AkNegi924/ClearVista" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Ensemble-based bankruptcy prediction model achieving 96.6% accuracy and 99.6% ROC AUC with
+                            SHAP integration for model interpretability and Gradio interface for real-time assessment.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">96.6%</span>
+                                <span class="metric-label">Accuracy</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">99.6%</span>
+                                <span class="metric-label">ROC AUC</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Ensemble Learning</span>
+                            <span class="tech-tag">SHAP</span>
+                            <span class="tech-tag">Gradio</span>
+                            <span class="tech-tag">Gemini API</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Land Use Classification</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/AkNegi924/land-use-classifier/tree/main" target="_blank"
+                                    class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://huggingface.co/spaces/dl-project-land-use/land-use-prediction"
+                                    target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Custom CNN and EfficientNet-B7 based model for satellite imagery classification.
+                            Deployed on Hugging Face with Gradio interface and Flask app.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">91.19%</span>
+                                <span class="metric-label">Test Accuracy</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">25MB</span>
+                                <span class="metric-label">Model Size</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">CNN</span>
+                            <span class="tech-tag">EfficientNet</span>
+                            <span class="tech-tag">Transfer Learning</span>
+                            <span class="tech-tag">Flask</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>TSP Navigator</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/AkNegi924/DMS_Project_TripPlanning" target="_blank"
+                                    class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Travel route optimization application implementing Traveling Salesman Problem with
+                            interactive Folium maps and Wikipedia API integration for enhanced information display.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TSP Algorithm</span>
+                            <span class="tech-tag">Folium</span>
+                            <span class="tech-tag">Wikipedia API</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Predicting Readmission Risk in Diabetic Patients</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/AkNegi924/Readmission-Risk-in-Diabetic-Patients"
+                                    target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Built and tuned Gradient‑Boosting models on a dataset of over 100,000 diabetic patient
+                            records,
+                            with end‑to‑end EDA, feature ranking (ReliefF, Information Gain, SelectKBest), preprocessing
+                            (label encoding, normalization, RandomUnderSampling) and PCA to remove bias.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">100K+</span>
+                                <span class="metric-label">Records</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">63%</span>
+                                <span class="metric-label">Best Accuracy</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Gradient Boosting</span>
+                            <span class="tech-tag">GridSearchCV</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">PCA</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Chess Playing Interface</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/AkNegi924/Chess-Playing-Interface/tree/main" target="_blank"
+                                    class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Developed an interactive pygame-based chess interface with PvP, Stockfish, and five custom
+                            MCTS‑
+                            and Negamax‑driven engines; ran a round‑robin tournament where the mobility‑based engine
+                            scored a
+                            37.5% win rate.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">pygame</span>
+                            <span class="tech-tag">MCTS</span>
+                            <span class="tech-tag">Negamax</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="nav-arrow next" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="scroll-indicators" id="scrollIndicators"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>I'm always open to discussing new opportunities, collaborations, or just having a chat about AI
+                        and technology!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>NITK Surathkal</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/aknegi/" target="_blank" class="social-link linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/AkNegi924" target="_blank" class="social-link github">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Akhilesh Negi. Built with passion and code.</p>
+                <div class="footer-links">
+                    <a href="#home">Back to Top</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
